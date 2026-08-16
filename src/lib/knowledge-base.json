@@ -1,0 +1,67 @@
+{
+  "courses": [
+    {
+      "name": "Ethical Hacking",
+      "duration": "3 months",
+      "format": "Recorded & Live Hybrid",
+      "fees": "$299",
+      "includes": ["Video Lectures", "Hands-on Labs", "1-on-1 Mentorship", "Certificate"],
+      "link": "https://vaultofcourse.com/courses/ethical-hacking"
+    },
+    {
+      "name": "Python for Beginners",
+      "duration": "2 months",
+      "format": "Live Sessions",
+      "fees": "$199",
+      "includes": ["Live Classes", "Projects", "Certificate"],
+      "link": "https://vaultofcourse.com/courses/python-beginners"
+    },
+    {
+      "name": "Full Stack Web Development",
+      "duration": "6 months",
+      "format": "Live & Recorded",
+      "fees": "$499",
+      "includes": ["Frontend", "Backend", "Deployment", "Certificate", "Job Assistance"],
+      "link": "https://vaultofcourse.com/courses/full-stack-web"
+    }
+  ],
+  "training_programs": [
+    {
+      "name": "Cybersecurity Training",
+      "duration": "4 weeks",
+      "includes": ["Network Security", "Cryptography", "Certificate"],
+      "link": "https://vaultofcourse.com/training/cybersecurity"
+    }
+  ],
+  "internships": [
+    {
+      "role": "Frontend Developer Intern",
+      "type": "Unpaid, learning-focused",
+      "duration": "3 months",
+      "eligibility": "Students with basic HTML/CSS/JS knowledge",
+      "link": "https://vaultofcourse.com/internships/frontend"
+    },
+    {
+      "role": "Cybersecurity Intern",
+      "type": "Paid",
+      "duration": "6 months",
+      "eligibility": "Completion of Ethical Hacking course",
+      "link": "https://vaultofcourse.com/internships/cybersecurity"
+    }
+  ],
+  "faq": {
+    "how_to_enroll": "You can enroll in any course by visiting the course page and clicking the 'Enroll Now' button. Payment can be made online.",
+    "certificates_provided": "Yes, we provide certificates upon successful completion of our courses, training programs, and internships.",
+    "access_course": "You can access your courses through your student dashboard after logging in.",
+    "offer_letter": "Offer letters are sent via email and can also be downloaded from your portal under the 'Documents' section.",
+    "certificate_verification": "You can verify a certificate by visiting our verification page and entering the certificate ID.",
+    "submit_assignments": "Assignments must be submitted through the learning portal under the respective course section."
+  },
+  "pages": {
+    "certificate_verification": "https://vaultofcourse.com/verify",
+    "internships": "https://vaultofcourse.com/internships",
+    "courses": "https://vaultofcourse.com/courses",
+    "login": "https://vaultofcourse.com/login",
+    "contact": "https://vaultofcourse.com/contact"
+  }
+}

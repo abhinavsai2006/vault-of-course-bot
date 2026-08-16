@@ -1,69 +1,35 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Chatbot from '@/components/Chatbot/Chatbot';
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>
-            To get started, edit the{" "}
-            <code className={styles.code}>page.js</code> file.
-          </h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <main style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', fontFamily: 'sans-serif', backgroundColor: '#f8fafc', color: '#334155', padding: '20px' }}>
+      <div style={{ maxWidth: '800px', textAlign: 'center' }}>
+        <h1 style={{ fontSize: '3rem', fontWeight: 'bold', marginBottom: '1rem', color: '#1e293b' }}>VaultOfCourse</h1>
+        <p style={{ fontSize: '1.25rem', marginBottom: '2rem', color: '#475569' }}>
+          Welcome to the VaultOfCourse learning platform. We offer premium courses and internships to accelerate your career.
+        </p>
+        
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '20px', marginTop: '40px' }}>
+          <div style={{ padding: '24px', backgroundColor: 'white', borderRadius: '12px', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)' }}>
+            <h3 style={{ fontSize: '1.2rem', fontWeight: '600', marginBottom: '10px' }}>Premium Courses</h3>
+            <p style={{ fontSize: '0.9rem', color: '#64748b' }}>Explore our Ethical Hacking, Python, and Full Stack programs.</p>
+          </div>
+          <div style={{ padding: '24px', backgroundColor: 'white', borderRadius: '12px', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)' }}>
+            <h3 style={{ fontSize: '1.2rem', fontWeight: '600', marginBottom: '10px' }}>Internships</h3>
+            <p style={{ fontSize: '0.9rem', color: '#64748b' }}>Gain real-world experience with our internship opportunities.</p>
+          </div>
+          <div style={{ padding: '24px', backgroundColor: 'white', borderRadius: '12px', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)' }}>
+            <h3 style={{ fontSize: '1.2rem', fontWeight: '600', marginBottom: '10px' }}>Verified Certificates</h3>
+            <p style={{ fontSize: '0.9rem', color: '#64748b' }}>Earn industry-recognized certificates upon completion.</p>
+          </div>
         </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+
+        <p style={{ marginTop: '40px', fontSize: '1rem', fontStyle: 'italic', color: '#94a3b8' }}>
+          Need help? Click the chat icon in the bottom right to talk to our AI Support Assistant!
+        </p>
+      </div>
+
+      <Chatbot />
+    </main>
   );
 }

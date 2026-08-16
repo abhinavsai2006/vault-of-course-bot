@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# VaultOfCourse AI Chatbot
 
-## Getting Started
+This project is an AI Website Support Chatbot built for the VaultOfCourse platform. It acts as a first-level support and inquiry assistant for students and website visitors.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Responsive Chat Interface**: Modern, premium UI (glassmorphism) tailored for both desktop and mobile.
+- **Smart Routing & Intent Detection**: Built-in instructions using prompt engineering to categorize queries (course_inquiry, internship_inquiry, etc.).
+- **Knowledge Base Integration**: Retrieves information strictly from the configured `src/lib/knowledge-base.json`. No hallucination.
+- **WhatsApp Escalation**: Automatically detects queries requiring human intervention (e.g., payment issues, missing offer letters) and provides a WhatsApp escalation link.
+- **Contextual Memory**: Remembers previous questions to handle follow-up pronouns (e.g., "Tell me about Python", then "What's its duration?").
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tech Stack
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- Next.js (App Router)
+- React
+- Vanilla CSS (CSS Modules)
+- Google Gen AI SDK (`@google/genai`)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Setup Instructions
 
-## Learn More
+1. **Install Dependencies**
+   ```bash
+   npm install
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. **Configure Environment Variables**
+   Create a `.env.local` file in the root of the project and add your Google Gemini API key:
+   ```env
+   GEMINI_API_KEY=your_google_gemini_api_key_here
+   ```
+   *Note: If you do not provide an API key, the chatbot will run in "mock mode" for basic testing.*
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Run the Development Server**
+   ```bash
+   npm run dev
+   ```
+   Open [http://localhost:3000](http://localhost:3000) with your browser to see the application.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Testing
 
-## Deploy on Vercel
+A test dataset covering 10+ edge cases and intents is provided in `tests/test-queries.json`. You can use these queries to manually verify the chatbot's response accuracy, escalation triggers, and intent detection.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Structure
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `src/components/Chatbot/`: The UI components and styles for the Chatbot.
+- `src/app/api/chat/route.js`: The Next.js API route that handles communication with the Google Gemini API.
+- `src/lib/prompts.js`: The system instruction and prompt architecture.
+- `src/lib/knowledge-base.json`: The structured data source for VaultOfCourse.

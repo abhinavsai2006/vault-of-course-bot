@@ -1,0 +1,62 @@
+[
+  {
+    "query": "What ethical hacking courses do you have?",
+    "expected_intent": "course_inquiry",
+    "description": "Course inquiries"
+  },
+  {
+    "query": "What is included in the full stack training program?",
+    "expected_intent": "training_inquiry",
+    "description": "Training inquiries"
+  },
+  {
+    "query": "I want to apply for an internship.",
+    "expected_intent": "internship_inquiry",
+    "description": "Internship inquiries"
+  },
+  {
+    "query": "Where can I download my certificate?",
+    "expected_intent": "certificate_query",
+    "description": "Certificate issues"
+  },
+  {
+    "query": "My offer letter is not available.",
+    "expected_intent": "offer_letter_query",
+    "description": "Offer letter issues"
+  },
+  {
+    "query": "How can I verify my certificate?",
+    "expected_intent": "certificate_verification",
+    "description": "Verification queries"
+  },
+  {
+    "query": "Where can I find free courses?",
+    "expected_intent": "website_navigation",
+    "description": "Website navigation"
+  },
+  {
+    "query": "I paid but haven't received access.",
+    "expected_intent": "payment_query",
+    "description": "Payment questions"
+  },
+  {
+    "query": "The website is not loading for me.",
+    "expected_intent": "technical_support",
+    "description": "Technical issues"
+  },
+  {
+    "query": "Who is the president of the United States?",
+    "expected_intent": "unknown",
+    "description": "Random/general questions"
+  },
+  {
+    "query": "hello",
+    "expected_intent": "general_query",
+    "description": "Unclear questions"
+  },
+  {
+    "query": "I want to speak to a human.",
+    "expected_intent": "human_support",
+    "description": "Questions requiring human support"
+  }
+]

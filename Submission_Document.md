@@ -18,9 +18,8 @@ A fully responsive, premium chatbot interface was built using React and vanilla 
 - Clear WhatsApp escalation button when human intervention is required.
 
 **Screenshots:**
-![Chatbot Closed](./screenshot_closed.png)
-![Chatbot Open](./screenshot_open.png)
-![Chatbot Interaction](./screenshot_interaction.png)
+![App Screenshot 1](./image1.png)
+![App Screenshot 2](./image2.png)
 
 ---
 
